@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UserWindowClass</class>
+ <widget class="QWidget" name="UserWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>847</width>
+    <height>516</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>用户窗口</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_1">
+       <item>
+        <widget class="QLabel" name="welcomeLabel">
+         <property name="text">
+          <string>亲爱的用户，欢迎登陆电商系统！</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="infoButton">
+         <property name="text">
+          <string>个人信息</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="logOutButton">
+         <property name="text">
+          <string>注销</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLabel" name="banner">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QComboBox" name="typeBox">
+         <item>
+          <property name="text">
+           <string>全部</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>食品</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>电子</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>生活</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="searchInput"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="searchButton">
+         <property name="text">
+          <string>搜索</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTableWidget" name="itemTableWidget">
+       <column>
+        <property name="text">
+         <string>类别</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>ID</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>名称</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>生产日期</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>有效期</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>卖家</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>库存</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>单价</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="userwindow.qrc"/>
+ </resources>
+ <connections/>
+</ui>

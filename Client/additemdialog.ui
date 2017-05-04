@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddItemDialog</class>
+ <widget class="QDialog" name="AddItemDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>311</width>
+    <height>305</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>进货</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QFormLayout" name="formLayout">
+       <property name="fieldGrowthPolicy">
+        <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+       </property>
+       <item row="0" column="0">
+        <widget class="QLabel" name="typeLabel">
+         <property name="text">
+          <string>类别</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QComboBox" name="typeBox">
+         <item>
+          <property name="text">
+           <string>食品</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>电子</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>生活</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="iDLabel">
+         <property name="text">
+          <string>ID</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="iDLineEdit"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="nameLabel">
+         <property name="text">
+          <string>商品名称</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="nameLineEdit"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="produceLabel">
+         <property name="text">
+          <string>生产日期</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QDateEdit" name="produceDateEdit"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="validLabel">
+         <property name="text">
+          <string>有效期</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QDateEdit" name="validDateEdit"/>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="numLabel">
+         <property name="text">
+          <string>数量</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLineEdit" name="numLineEdit"/>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="priceLabel">
+         <property name="text">
+          <string>价格</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QLineEdit" name="priceLineEdit"/>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="saleLabel">
+         <property name="text">
+          <string>降价期</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QDateEdit" name="saleDateEdit"/>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="factorLabel">
+         <property name="text">
+          <string>降价因子</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLineEdit" name="factorLineEdit"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="addButton">
+       <property name="text">
+        <string>进货</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SellerItemsDialog</class>
+ <widget class="QDialog" name="SellerItemsDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>718</width>
+    <height>489</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>个人商品列表</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QComboBox" name="typeBox">
+         <item>
+          <property name="text">
+           <string>全部</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>食品</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>电子</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>生活</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="searchInput"/>
+       </item>
+       <item>
+        <widget class="QPushButton" name="searchButton">
+         <property name="text">
+          <string>搜索</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTableWidget" name="itemTableWidget">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <column>
+        <property name="text">
+         <string>类别</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>ID</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>名称</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>生产期</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>有效期</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>库存</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>价格</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

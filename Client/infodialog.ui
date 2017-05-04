@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InfoDialog</class>
+ <widget class="QDialog" name="InfoDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>320</width>
+    <height>143</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>个人信息</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>30</y>
+     <width>211</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="layout">
+    <item>
+     <widget class="QLabel" name="idLabel">
+      <property name="text">
+       <string>ID:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="nameLabel">
+      <property name="text">
+       <string>Name:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="balanceLabel">
+      <property name="text">
+       <string>Balance:</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
